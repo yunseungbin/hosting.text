@@ -1,0 +1,389 @@
+:root {
+    --main-font: "Nanum Myeongjo", serif;
+    --main-font2: "UNO", Helvetica, sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul > li {
+    list-style: none;
+  }
+  ul > li > a {
+    color: black;
+    text-decoration: none;
+  }
+  ul > li > a:hover {
+    text-decoration: underline;
+  }
+  body > p {
+    text-align: center;
+    height: 30px;
+    line-height: 27px;
+  }
+  body > p > a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  body > p > a:hover {
+    text-decoration: underline;
+  }
+  .service {
+    background-color: #a9a9a9;
+  }
+  .service-2 {
+    background-color: black;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: white;
+    z-index: 900;
+  }
+  
+  header > div.logo > a {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header > nav {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+  }
+  header > nav > ul {
+    display: flex;
+  }
+  header > nav > ul > li {
+    margin-left: 45px;
+  }
+  header > nav > ul > li > a {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  #menu {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--main-font);
+    z-index: 900;
+  }
+  
+  #bottom-menu {
+    margin: 85px 0 64px 0;
+  }
+  .shop-menu-1 {
+    padding-top: 5px;
+  }
+  .shop-menu {
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+  .side-menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+  .hover:hover > .side-menu {
+    height: 100px;
+  }
+  /*mobile */
+  .mobile {
+    display: none;
+  }
+  .burger {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    cursor: pointer;
+  }
+  
+  .burger span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 8px;
+    position: relative;
+    background-color: black;
+  }
+  .mobile-image {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+  }
+  .account-image,
+  .cart-image {
+    transform: translateY(-20%);
+    margin-left: 25px;
+  }
+  .cart-image {
+    position: relative;
+  }
+  .cart-image > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*mobile*/
+  #talk {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font2);
+    cursor: pointer;
+  }
+  
+  main {
+    max-width: 858px;
+    /* border: 1px solid gray; 나중에 border 속성 빼주기~ */
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+  .main-header {
+    position: sticky;
+    top: 100px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--main-font2);
+    background-color: white;
+    z-index: 500;
+  }
+  .main-header > div > a {
+    cursor: text;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 3px;
+  }
+  .main-header > div > a:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  #right {
+    text-align: right;
+  }
+  
+  .main-header-1 {
+    height: 0;
+    overflow: hidden;
+  }
+  .main-header-1 li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .focus:focus + .main-header-1 {
+    height: 200px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 55px;
+  }
+  .main-secter {
+    /* display: inline-block; */
+    width: 400px;
+  }
+  .main-secter h3 {
+    font-family: var(--main-font);
+  }
+  .main-secter > img {
+    transition: filter 0.5s ease;
+    max-width: 400px;
+  }
+  .main-secter > img:hover {
+    filter: blur(10px);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .price-flex {
+    padding: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .price-flex h3 {
+    font-weight: 500;
+  }
+  .main-secter p {
+    font-family: var(--main-font2);
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text-center > a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .cart {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .cart1 {
+    text-align: center;
+    padding: 70px 0 50px 0;
+  }
+  .cart > a,
+  .cart1 > a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    height: 45px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    width: 100%;
+    height: 110px;
+    position: relative;
+    top: 200px;
+    padding-top: 50px;
+    font-family: var(--main-font);
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding: 50px 0 100px 0;
+  }
+  #time {
+    font-size: 14px;
+    color: rgb(94, 94, 94, 0.5);
+    font-weight: bold;
+  }
+  #number {
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(44, 44, 44);
+  }
+  #number ~ span {
+    line-height: 20px;
+  }
+  #time {
+    font-size: 13px;
+  }
+  .footer-item {
+    padding-top: 25px;
+    font-size: 11px;
+  }
+  .footer-item > a {
+    color: black;
+    text-decoration: none;
+  }
+  .footer-item > a:hover {
+    text-decoration: underline;
+  }
+  footer ul > li {
+    list-style-type: none;
+  }
+  #footer-1 {
+    margin-left: 50px;
+  }
+  #footer-1 > h3 {
+    padding-bottom: 12px;
+  }
+  .flexend {
+    display: flex;
+    margin-right: 100px;
+  }
+  .footer-items {
+    flex: 1 1 25%;
+  }
+  .footer-item1 {
+    padding: 0 45px;
+    line-height: 25px;
+  }
+  .footer-item1 > h3 {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .footer-item1 > ul {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    #menu,
+    nav {
+      display: none;
+    }
+  
+    .mobile {
+      display: block;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo > a > img {
+      width: 110px;
+    }
+    #talk {
+      width: 60px;
+      height: 60px;
+    }
+    main {
+      margin-top: 40px;
+    }
+    .main-media {
+      margin-left: 15px;
+    }
+    .main-media1 {
+      margin-right: 15px;
+    }
+    .main-header {
+      position: relative;
+      top: 0px;
+      margin-bottom: 40px;
+    }
+    .main-secter {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .main-secter img {
+      max-width: 100%;
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .flexend {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-item1 {
+      padding-top: 45px;
+    }
+    .cart,
+    .cart1 {
+      padding: 10px 0 50px 0;
+    }
+    footer {
+      padding: 0;
+    }
+  }
