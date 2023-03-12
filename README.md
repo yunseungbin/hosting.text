@@ -11,7 +11,7 @@
 - ㅎㅎ
 
 ## 배포 링크
-<a href="https://yunseungbin.github.io/hosting.text/">논픽션 클론</a>
+<a href="https://yunseungbin.github.io/hosting.text-nonfiction-/">논픽션 클론</a>
 
 사용기술 스택
 
